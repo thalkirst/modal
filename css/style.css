@@ -36,7 +36,7 @@
 .modal__popped {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s linear;
+    transition: opacity 0.5s linear;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -45,6 +45,7 @@
     box-sizing: border-box;
     padding: 2rem;;
     background-color: white;
+    outline: 9999px solid rgba(0,0,0,0.5);
 
 }
 
