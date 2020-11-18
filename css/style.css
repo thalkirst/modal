@@ -20,7 +20,9 @@
 }
 
 .modal {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -29,6 +31,34 @@
     box-sizing: border-box;
     padding: 2rem;;
     background-color: white;
+}
+
+.modal__popped {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2rem;;
+    background-color: white;
+
+}
+
+.modal__fadeOut {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2rem;;
+    background-color: white;
+    animation-name: fadeOut;
+    animation-duration: 0.3s
 }
 
 @media screen and (max-width: 560px) {
@@ -71,3 +101,4 @@
     background-color: red;
     color: white;
 }
+

@@ -12,13 +12,13 @@
             <article class="blogpost">
                 <h3>A new update is available for download!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto ex quod doloremque autem vitae atque suscipit rem quae enim dolores ab minima. Nostrum omnis repellendus quis, eos nisi nulla?</p>
-                <button class="button__download">Download</button>
+                <button id="button__download" class="button__download" onclick="popModal()">Download</button>
             </article>
         </section>
         </section>
         <aside class="sidebar"></aside>
-        <div class="modal">
-            <button class="button__closeModal">X</button>
+        <div id="modal" class="modal">
+            <button class="button__closeModal" onclick="closeModal()">X</button>
             <header class="modal__header">
                 <br>
                 DOWNLOAD
@@ -33,5 +33,6 @@
             </footer>
         </div>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>
