@@ -46,21 +46,8 @@
     padding: 2rem;;
     background-color: white;
     outline: 9999px solid rgba(0,0,0,0.5);
-
 }
 
-.modal__fadeOut {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    box-sizing: border-box;
-    padding: 2rem;;
-    background-color: white;
-    animation-name: fadeOut;
-    animation-duration: 0.3s
-}
 
 @media screen and (max-width: 560px) {
     .modal {
@@ -73,7 +60,7 @@
 
 }
 
-.button__closeModal {
+.button__X {
     float: right;
     background-color: white;
     color: red;
@@ -102,4 +89,3 @@
     background-color: red;
     color: white;
 }
-

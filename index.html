@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <main class="flex-container">
+    <main class="flex-container modal__closer">
         <section class="blog">
             <article class="blogpost">
                 <h3>A new update is available for download!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto ex quod doloremque autem vitae atque suscipit rem quae enim dolores ab minima. Nostrum omnis repellendus quis, eos nisi nulla?</p>
-                <button id="button__download" class="button__download" onclick="popModal()">Download</button>
-            </article>
-        </section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto ex quod doloremque autem vitae
+                    atque suscipit rem quae enim dolores ab minima. Nostrum omnis repellendus quis, eos nisi nulla?</p>
+                    <button class="button__download">Download</button>
+            </article>            
         </section>
         <aside class="sidebar"></aside>
     </main>
-    <div id="modalBox" class="modal">
-        <button class="button__closeModal" onclick="closeModal()">X</button>
+
+    <div class="modalBox modal">
+        <button class="button__X button__closeModal">X</button>
         <header class="modal__element">
             <br>
             DOWNLOAD
         </header>
-        <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi ex, ducimus hic et fuga optio inventore laborum aspernatur suscipit! Vel enim ducimus ratione labore inventore illum qui voluptatum dicta?
+        <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi ex, ducimus hic et
+            fuga optio inventore laborum aspernatur suscipit! Vel enim ducimus ratione labore inventore illum qui
+            voluptatum dicta?
         </p>
-        <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto ex quod doloremque autem vitae atque suscipit rem quae enim dolores ab minima. Nostrum omnis repellendus quis, eos nisi nulla?</p>
+        <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto ex quod doloremque
+            autem vitae atque suscipit rem quae enim dolores ab minima. Nostrum omnis repellendus quis, eos nisi nulla?
+        </p>
         <br>
         <footer class="modal__footer">
-            <button class="button__okay">Okay</button>
-            <button class="button__cancel">Cancel</button>
+            <button class="button__okay button__closeModal">Okay</button>
+            <button class="button__cancel button__closeModal">Cancel</button>
         </footer>
+
     </div>
     <script src="/js/main.js"></script>
 </body>
+
 </html>
