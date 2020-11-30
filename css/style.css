@@ -50,9 +50,9 @@
 
 
 @media screen and (max-width: 560px) {
-    .modal {
+    .modal__popped {
      width: 100%;
-    }
+    } 
 }
 
 .modal__footer {
